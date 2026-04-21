@@ -1,0 +1,202 @@
+/**
+ * Portfolio Configuration
+ * Update this file to personalize your portfolio
+ */
+
+export const siteConfig = {
+    name: 'Mayank Singal',
+    title: 'Full-Stack Developer',
+    description: 'I build performant, scalable applications with clean architecture and thoughtful design.',
+    email: 'mayanksingal156@email.com',
+    location: 'Ambala City, India',
+    available: true, // Show "Available for work" badge
+    website: 'www.mayanksingal.me',
+    resumePath: '/Mayank Singal.pdf',
+    resumeDownloadName: 'Mayank_Resume.pdf',
+}
+
+// EmailJS configuration — sign up at https://www.emailjs.com/
+// 1. Create a service (connect your Gmail/email)
+// 2. Create an email template with variables: {{from_name}}, {{from_email}}, {{message}}
+// 3. Get your Public Key from Account > API Keys
+export const emailjsConfig = {
+    serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
+    templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
+    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '',
+}
+
+export const socialLinks = {
+    github: 'https://github.com/mayank70007',
+    linkedin: 'https://www.linkedin.com/in/mayank70007/',
+    email: 'mailto:mayanksingal156@email.com',
+}
+
+export const navLinks = [
+    { name: 'About', href: '#about' },
+    { name: 'Showcase', href: '#projects' },
+    { name: 'Experience', href: '#experience' },
+    { name: 'Profiles', href: '#profiles' },
+    { name: 'Contact', href: '#contact' },
+]
+
+export const heroContent = {
+    greeting: 'Welcome to my portfolio',
+    name: 'Mayank Singal',
+    roles: [
+        'Full-Stack Developer',
+        'React Developer',
+        'Problem Solver',
+    ],
+    description: 'I build performant, scalable applications with clean architecture and thoughtful design. Let\'s create something remarkable.',
+    cta: {
+        projects: 'View Projects',
+        resume: 'Download Resume',
+        contact: 'Contact Me',
+    },
+}
+
+export const aboutContent = {
+    title: 'Building with purpose',
+    paragraphs: [
+        'I\'m a developer who thrives at the intersection of design and engineering. I don\'t just write code — I craft solutions that are performant, maintainable, and delightful to use.',
+        'With a strong foundation in full-stack technologies, I approach every project with a product mindset: understanding the problem deeply before writing a single line of code.',
+        'My work spans from interactive web applications to scalable full-stack systems, always prioritizing clean architecture and real-world impact.',
+    ],
+    stats: [
+        { value: '7+', label: 'Projects Completed' },
+        { value: '10+', label: 'Technologies' },
+        { value: '1', label: 'Years Experience' },
+    ],
+    traits: [
+        {
+            title: 'Problem Solver',
+            description: 'I approach challenges analytically, breaking down complex problems into manageable solutions.',
+        },
+        {
+            title: 'Continuous Learner',
+            description: 'Always exploring new technologies and methodologies to stay at the cutting edge.',
+        },
+        {
+            title: 'Team Leader',
+            description: 'I believe in collaborative development and clear communication for project success.',
+        },
+    ],
+}
+
+export const techStackItems = [
+    { name: 'HTML', color: '#E34F26' },
+    { name: 'CSS', color: '#1572B6' },
+    { name: 'JavaScript', color: '#F7DF1E' },
+    { name: 'TypeScript', color: '#3178C6' },
+    { name: 'React', color: '#61DAFB' },
+    { name: 'Next.js', color: '#ffffff' },
+    { name: 'Tailwind CSS', color: '#06B6D4' },
+    { name: 'Vite', color: '#646CFF' },
+    { name: 'Node.js', color: '#339933' },
+    { name: 'Express', color: '#ffffff' },
+    { name: 'MongoDB', color: '#47A248' },
+    { name: 'MySQL', color: '#4479A1' },
+    { name: 'Redis', color: '#DC382D' },
+    { name: 'Firebase', color: '#FFCA28' },
+    { name: 'Docker', color: '#2496ED' },
+    { name: 'Git', color: '#F05032' },
+    { name: 'Python', color: '#3776AB' },
+    { name: 'Vercel', color: '#ffffff' },
+]
+
+export const projects = [
+    {
+        id: 1,
+        title: 'CareSync - Microservices Hospital Management System',
+        shortDescription: 'Microservices-based hospital platform for appointments, records, and secure role-based workflows.',
+        fullDescription: 'Built and orchestrated a healthcare management system with 8+ Spring Boot microservices, service discovery with Eureka, secure JWT-based authentication/authorization, and a React dashboard for appointment and medical record management.',
+        tech: ['Spring Boot', 'Spring Security', 'JWT', 'Eureka Server', 'React.js', 'MySQL', 'Spring Data JPA', 'REST APIs', 'Maven', 'Git', 'Postman'],
+        features: [
+            'Developed 8+ Spring Boot microservices with Eureka service discovery',
+            'Implemented 25+ RESTful APIs for appointments, patient records, and role-based operations',
+            'Secured endpoints with Spring Security, JWT authentication, and RBAC authorization',
+            'Integrated MySQL using Spring Data JPA with transactional data handling',
+            'Built a React.js dashboard for appointment management and medical record viewing',
+        ],
+        liveUrl: 'https://github.com/mayank70007',
+        githubUrl: 'https://github.com/mayank70007',
+        featured: true,
+    },
+    {
+        id: 2,
+        title: 'CoachConnect - Real-Time Mentorship Platform',
+        shortDescription: 'Real-time mentorship platform with role-based workflows and live messaging.',
+        fullDescription: 'Designed a mentorship platform with role-aware backend architecture, secure authentication, Socket.IO-based real-time communication, and workflow modeling for subscriptions, tasks, and trainee progress tracking.',
+        tech: ['Node.js', 'Express.js', 'MongoDB', 'Redis', 'Socket.IO', 'Docker', 'JWT', 'bcrypt'],
+        features: [
+            'Designed Trainer and Trainee role-based backend with Node.js and Express.js',
+            'Implemented JWT authentication and bcrypt-secured password handling',
+            'Developed real-time messaging and activity updates with Socket.IO and Redis',
+            'Modeled mentorship workflows for subscriptions, task assignment, and progress tracking in MongoDB',
+            'Containerized the application with Docker for consistent development and deployment',
+        ],
+        liveUrl: 'https://github.com/mayank70007',
+        githubUrl: 'https://github.com/mayank70007',
+        featured: true,
+    },
+    {
+        id: 3,
+        title: 'EventSphere - Event Management Platform',
+        shortDescription: 'Full-stack event platform for creation, registration, and event data management.',
+        fullDescription: 'Built a full-stack event management system with a Node.js and Express.js backend, a React.js frontend, and MongoDB persistence for event lifecycle operations and responsive user experience.',
+        tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
+        features: [
+            'Designed REST APIs for event creation, registration, and retrieval flows',
+            'Used MongoDB for robust event data storage and management',
+            'Developed responsive UI components with React.js and Tailwind CSS',
+            'Delivered end-to-end full-stack integration between frontend and backend modules',
+        ],
+        liveUrl: 'https://github.com/mayank70007',
+        githubUrl: 'https://github.com/mayank70007',
+        featured: true,
+    },
+]
+
+export const experiences = [
+    {
+        id: 1,
+        title: 'Full-Stack Developer',
+        company: 'Freelance',
+        period: '2023 — Present',
+        description: 'Building web applications for startups and small businesses.',
+        details: [
+            'Developed custom web applications for 10+ clients',
+            'Implemented responsive designs optimized for performance',
+            'Integrated third-party APIs and payment systems',
+        ],
+        technologies: ['React', 'Next.js', 'Node.js', 'MySQL'],
+    },
+]
+
+export const education = {
+    degree: 'Bachelor\'s Degree in Computer Science',
+    school: 'S A Jain Senior Model School',
+    period: '2023 — 2027',
+    description: 'Focused on software engineering, algorithms, and web technologies.',
+}
+
+export const profiles = [
+    {
+        name: 'GitHub',
+        username: 'Mayank Singal',
+        description: 'Open source contributions & projects',
+        url: 'https://github.com/mayank70007',
+    },
+    {
+        name: 'LinkedIn',
+        username: 'Mayank Singal',
+        description: 'Professional network & experience',
+        url: 'https://www.linkedin.com/in/mayank70007/',
+    },
+    {
+        name: 'LeetCode',
+        username: 'Mayank Singal',
+        description: '500+ problems solved',
+        url: 'https://leetcode.com/u/Mayank_Singal/',
+    },
+]

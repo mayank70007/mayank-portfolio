@@ -3,42 +3,10 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import {
     HiArrowRight, HiExternalLink, HiCode,
-    HiChip, HiChevronDown, HiArrowLeft
+    HiChip, HiChevronDown, HiArrowLeft, HiX
 } from 'react-icons/hi'
 import { FaGithub } from 'react-icons/fa'
-import {
-    SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiSpring, SiSpringboot,
-    SiNodedotjs, SiExpress, SiTailwindcss, SiMongodb, SiMysql,
-    SiRedis, SiDocker, SiGit, SiGithub, SiPython, SiFirebase, SiVercel,
-    SiVite, SiFramer
-} from 'react-icons/si'
-import { FaJava } from 'react-icons/fa'
 import { projects, techStackItems } from '../../data/config'
-
-const techIconMap = {
-    'Spring Boot': SiSpringboot,
-    'Spring': SiSpring,
-    'Java': FaJava,
-    'HTML': SiHtml5,
-    'CSS': SiCss3,
-    'JavaScript': SiJavascript,
-    'React': SiReact,
-    'Next.js': SiNextdotjs,
-    'Tailwind CSS': SiTailwindcss,
-    'Vite': SiVite,
-    'Framer Motion': SiFramer,
-    'Node.js': SiNodedotjs,
-    'Express': SiExpress,
-    'MongoDB': SiMongodb,
-    'MySQL': SiMysql,
-    'Redis': SiRedis,
-    'Firebase': SiFirebase,
-    'Docker': SiDocker,
-    'Git': SiGit,
-    'GitHub': SiGithub,
-    'Python': SiPython,
-    'Vercel': SiVercel,
-}
 
 const tabs = [
     { id: 'projects', label: 'Projects', icon: HiCode },
@@ -82,7 +50,7 @@ const ProjectCard = ({ project, onDetails, index }) => (
 const TechStackGrid = () => (
     <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-4">
         {techStackItems.map((item, index) => {
-            const IconComponent = techIconMap[item.name]
+            const IconComponent = item.icon
             return (
                 <motion.div
                     key={item.name}
@@ -128,18 +96,18 @@ const ProjectDetail = ({ project, onClose }) => {
                     className="max-w-6xl mx-auto"
                 >
                     {/* Navigation */}
-                    <div className="flex items-center gap-4 mb-8">
-                        <button
-                            onClick={onClose}
-                            className="inline-flex items-center gap-2 px-4 py-2 text-sm font-medium text-text-secondary hover:text-text-primary bg-primary-50 border border-border rounded-lg transition-colors duration-300"
-                        >
-                            <HiArrowLeft className="w-4 h-4" /> Back
-                        </button>
+                    <div className="flex items-center justify-between mb-8">
                         <div className="flex items-center gap-2 text-sm text-text-muted">
                             <span>Projects</span>
                             <span>›</span>
                             <span className="text-text-primary">{project.title}</span>
                         </div>
+                        <button
+                            onClick={onClose}
+                            className="inline-flex flex-col items-center justify-center p-2 rounded-full text-text-secondary hover:text-text-primary hover:bg-primary-50 transition-colors duration-300"
+                        >
+                            <HiX className="w-6 h-6" />
+                        </button>
                     </div>
 
                     {/* Content Grid */}

@@ -67,24 +67,42 @@
     }
 
     .btn-primary {
-        @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary glass-card glass-card-hover;
+        @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary glass-card cursor-pointer relative overflow-hidden;
         background: linear-gradient(135deg, rgba(112, 128, 144, 0.2), rgba(168, 168, 168, 0.15));
         color: white;
         border-color: rgba(112, 128, 144, 0.3);
     }
 
+    .btn-primary::after {
+        content: '';
+        @apply absolute inset-0 bg-white/20 opacity-0 transition-opacity duration-300;
+    }
+
+    .btn-primary:hover::after {
+        @apply opacity-100;
+    }
+
     .btn-primary:hover {
-        transform: scale(1.05);
+        transform: translateY(-2px);
         box-shadow: 0 0 30px rgba(112, 128, 144, 0.3),
             0 12px 40px rgba(0, 0, 0, 0.5);
     }
 
+    .btn-primary:active {
+        transform: translateY(0);
+    }
+
     .btn-secondary {
-        @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary glass-card glass-card-hover text-text-primary;
+        @apply inline-flex items-center justify-center px-6 py-3 text-sm font-medium rounded-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-primary glass-card text-text-primary;
     }
 
     .btn-secondary:hover {
-        transform: scale(1.05);
+        transform: translateY(-2px);
+        background: rgba(255, 255, 255, 0.05);
+    }
+
+    .btn-secondary:active {
+        transform: translateY(0);
     }
 
     .btn-ghost {

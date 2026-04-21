@@ -115,7 +115,7 @@ const Hero = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <HiDownload className="w-4 h-4" />
+                        <HiDownload className="w-4 h-4 group-hover:-translate-y-1 transition-transform" />
                         {heroContent.cta.resume}
                     </motion.a>
 
@@ -125,7 +125,7 @@ const Hero = () => {
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
                     >
-                        <HiMail className="w-4 h-4" />
+                        <HiMail className="w-4 h-4 group-hover:scale-110 transition-transform" />
                         {heroContent.cta.contact}
                     </motion.button>
                 </motion.div>

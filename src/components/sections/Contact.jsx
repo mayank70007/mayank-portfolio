@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { HiPaperAirplane, HiCheck, HiExclamation } from 'react-icons/hi'
 import emailjs from '@emailjs/browser'
-import { emailjsConfig, socialLinks } from '../../data/config'
+import { emailjsConfig } from '../../data/config'
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -304,27 +304,6 @@ const Contact = () => {
                         </motion.button>
                     </motion.form>
 
-                    {/* Alternative Contact Methods */}
-                    <motion.div variants={itemVariants} className="mt-16 pt-16 border-t border-border">
-                        <p className="text-sm text-text-muted mb-4">Or reach out directly:</p>
-                        <div className="flex flex-col sm:flex-row gap-4">
-                            <a
-                                href={socialLinks.email}
-                                className="text-text-secondary hover:text-text-primary transition-colors duration-300"
-                            >
-                                Mail me
-                            </a>
-                            <span className="hidden sm:inline text-text-muted">•</span>
-                            <a
-                                href={socialLinks.linkedin}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="text-text-secondary hover:text-text-primary transition-colors duration-300"
-                            >
-                                LinkedIn
-                            </a>
-                        </div>
-                    </motion.div>
                 </div>
             </motion.div>
         </section>

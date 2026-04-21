@@ -178,12 +178,20 @@ export const education = {
         {
             degree: 'B.E. in Computer Science',
             school: 'Chitkara University, CUIET | Rajpura, India',
-            period: '2023 — 2027'
+            period: '2023 — 2027',
+            description: 'CGPA: 9.39',
         },
         {
             degree: 'XII - Non-Medical',
             school: 'S.A. Jain Senior Model School | Ambala, India',
-            period: '2021 — 2023'
+            period: 'Class XII',
+            description: '91.8%',
+        },
+        {
+            degree: 'X',
+            school: 'S.A. Jain Senior Model School | Ambala, India',
+            period: 'Class X',
+            description: '88.8%',
         }
     ],
 }

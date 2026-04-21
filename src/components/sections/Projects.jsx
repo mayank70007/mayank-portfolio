@@ -7,18 +7,21 @@ import {
 } from 'react-icons/hi'
 import { FaGithub } from 'react-icons/fa'
 import {
-    SiHtml5, SiCss3, SiJavascript, SiTypescript, SiReact, SiNextdotjs,
+    SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiSpring, SiSpringboot,
     SiNodedotjs, SiExpress, SiTailwindcss, SiMongodb, SiMysql,
     SiRedis, SiDocker, SiGit, SiGithub, SiPython, SiFirebase, SiVercel,
     SiVite, SiFramer
 } from 'react-icons/si'
+import { FaJava } from 'react-icons/fa'
 import { projects, techStackItems } from '../../data/config'
 
 const techIconMap = {
+    'Spring Boot': SiSpringboot,
+    'Spring': SiSpring,
+    'Java': FaJava,
     'HTML': SiHtml5,
     'CSS': SiCss3,
     'JavaScript': SiJavascript,
-    'TypeScript': SiTypescript,
     'React': SiReact,
     'Next.js': SiNextdotjs,
     'Tailwind CSS': SiTailwindcss,

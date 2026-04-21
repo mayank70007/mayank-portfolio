@@ -63,7 +63,7 @@ export const aboutContent = {
         'I am comfortable working across frontend and backend tasks, and I prefer to keep things maintainable rather than overcomplicated.',
     ],
     stats: [
-        { value: '3+', label: 'Projects Built' },
+        { value: '5+', label: 'Projects Built' },
         { value: '8+', label: 'Core Technologies' },
         { value: '1', label: 'Years Experience' },
     ],
@@ -84,23 +84,23 @@ export const aboutContent = {
 }
 
 export const techStackItems = [
-    { name: 'HTML', color: '#E34F26' },
-    { name: 'CSS', color: '#1572B6' },
+    { name: 'Spring Boot', color: '#6DB33F' },
+    { name: 'Spring', color: '#6DB33F' },
+    { name: 'Java', color: '#ED8B00' },
     { name: 'JavaScript', color: '#F7DF1E' },
-    { name: 'TypeScript', color: '#3178C6' },
     { name: 'React', color: '#61DAFB' },
-    { name: 'Next.js', color: '#ffffff' },
-    { name: 'Tailwind CSS', color: '#06B6D4' },
-    { name: 'Vite', color: '#646CFF' },
     { name: 'Node.js', color: '#339933' },
     { name: 'Express', color: '#ffffff' },
-    { name: 'MongoDB', color: '#47A248' },
+    { name: 'HTML', color: '#E34F26' },
+    { name: 'CSS', color: '#1572B6' },
+    { name: 'Tailwind CSS', color: '#06B6D4' },
     { name: 'MySQL', color: '#4479A1' },
+    { name: 'MongoDB', color: '#47A248' },
     { name: 'Redis', color: '#DC382D' },
-    { name: 'Firebase', color: '#FFCA28' },
     { name: 'Docker', color: '#2496ED' },
     { name: 'Git', color: '#F05032' },
     { name: 'Python', color: '#3776AB' },
+    { name: 'Firebase', color: '#FFCA28' },
     { name: 'Vercel', color: '#ffffff' },
 ]
 
@@ -178,20 +178,12 @@ export const education = {
         {
             degree: 'B.E. in Computer Science',
             school: 'Chitkara University, CUIET | Rajpura, India',
-            period: '2023 — 2027',
-            description: 'CGPA: 9.39',
+            period: '2023 — 2027'
         },
         {
             degree: 'XII - Non-Medical',
             school: 'S.A. Jain Senior Model School | Ambala, India',
-            period: 'Class XII',
-            description: '91.8%',
-        },
-        {
-            degree: 'X',
-            school: 'S.A. Jain Senior Model School | Ambala, India',
-            period: 'Class X',
-            description: '88.8%',
+            period: '2023',
         }
     ],
 }

@@ -6,7 +6,7 @@
 export const siteConfig = {
     name: 'Mayank Singal',
     title: 'Full-Stack Developer',
-    description: 'I build performant, scalable applications with clean architecture and thoughtful design.',
+    description: 'Full-stack developer focused on practical web apps, clean architecture, and dependable problem solving.',
     email: 'mayanksingal156@email.com',
     location: 'Ambala City, India',
     available: true, // Show "Available for work" badge
@@ -47,7 +47,7 @@ export const heroContent = {
         'React Developer',
         'Problem Solver',
     ],
-    description: 'I build performant, scalable applications with clean architecture and thoughtful design. Let\'s create something remarkable.',
+    description: 'I build practical, maintainable web applications with a strong focus on clean code, problem solving, and user experience.',
     cta: {
         projects: 'View Projects',
         resume: 'Download Resume',
@@ -58,27 +58,27 @@ export const heroContent = {
 export const aboutContent = {
     title: 'Building with purpose',
     paragraphs: [
-        'I\'m a developer who thrives at the intersection of design and engineering. I don\'t just write code — I craft solutions that are performant, maintainable, and delightful to use.',
-        'With a strong foundation in full-stack technologies, I approach every project with a product mindset: understanding the problem deeply before writing a single line of code.',
-        'My work spans from interactive web applications to scalable full-stack systems, always prioritizing clean architecture and real-world impact.',
+        'I am a computer science student and full-stack developer who likes turning ideas into working web applications. I focus on simple architecture, readable code, and practical solutions.',
+        'My work is shaped by hands-on projects in React, Node.js, Spring Boot, and databases, along with a habit of learning by building.',
+        'I am comfortable working across frontend and backend tasks, and I prefer to keep things maintainable rather than overcomplicated.',
     ],
     stats: [
-        { value: '7+', label: 'Projects Completed' },
-        { value: '10+', label: 'Technologies' },
+        { value: '3+', label: 'Projects Built' },
+        { value: '8+', label: 'Core Technologies' },
         { value: '1', label: 'Years Experience' },
     ],
     traits: [
         {
-            title: 'Problem Solver',
-            description: 'I approach challenges analytically, breaking down complex problems into manageable solutions.',
+            title: 'Practical Builder',
+            description: 'I prefer solutions that are useful, maintainable, and grounded in clear requirements.',
         },
         {
             title: 'Continuous Learner',
-            description: 'Always exploring new technologies and methodologies to stay at the cutting edge.',
+            description: 'I keep improving by building projects and exploring tools that solve real problems.',
         },
         {
-            title: 'Team Leader',
-            description: 'I believe in collaborative development and clear communication for project success.',
+            title: 'Collaborative Mindset',
+            description: 'I value communication, feedback, and working carefully with people or clients.',
         },
     ],
 }
@@ -108,15 +108,15 @@ export const projects = [
     {
         id: 1,
         title: 'CareSync - Microservices Hospital Management System',
-        shortDescription: 'Microservices-based hospital platform for appointments, records, and secure role-based workflows.',
-        fullDescription: 'Built and orchestrated a healthcare management system with 8+ Spring Boot microservices, service discovery with Eureka, secure JWT-based authentication/authorization, and a React dashboard for appointment and medical record management.',
+        shortDescription: 'Microservices hospital platform for appointments, records, and role-based workflows.',
+        fullDescription: 'Built a healthcare management system with Spring Boot microservices, Eureka service discovery, JWT-based authentication, and a React dashboard for appointment and medical record management.',
         tech: ['Spring Boot', 'Spring Security', 'JWT', 'Eureka Server', 'React.js', 'MySQL', 'Spring Data JPA', 'REST APIs', 'Maven', 'Git', 'Postman'],
         features: [
-            'Developed 8+ Spring Boot microservices with Eureka service discovery',
-            'Implemented 25+ RESTful APIs for appointments, patient records, and role-based operations',
-            'Secured endpoints with Spring Security, JWT authentication, and RBAC authorization',
-            'Integrated MySQL using Spring Data JPA with transactional data handling',
-            'Built a React.js dashboard for appointment management and medical record viewing',
+            'Developed Spring Boot microservices with Eureka service discovery',
+            'Implemented REST APIs for appointments, patient records, and role-based operations',
+            'Secured endpoints with Spring Security and JWT authentication',
+            'Integrated MySQL using Spring Data JPA for transactional data handling',
+            'Built a React dashboard for appointment management and medical record viewing',
         ],
         liveUrl: 'https://github.com/mayank70007',
         githubUrl: 'https://github.com/mayank70007',
@@ -125,11 +125,11 @@ export const projects = [
     {
         id: 2,
         title: 'CoachConnect - Real-Time Mentorship Platform',
-        shortDescription: 'Real-time mentorship platform with role-based workflows and live messaging.',
-        fullDescription: 'Designed a mentorship platform with role-aware backend architecture, secure authentication, Socket.IO-based real-time communication, and workflow modeling for subscriptions, tasks, and trainee progress tracking.',
+        shortDescription: 'Mentorship platform with role-based workflows and live messaging.',
+        fullDescription: 'Built a mentorship platform with role-aware backend structure, secure authentication, real-time communication, and workflow modeling for subscriptions, tasks, and progress tracking.',
         tech: ['Node.js', 'Express.js', 'MongoDB', 'Redis', 'Socket.IO', 'Docker', 'JWT', 'bcrypt'],
         features: [
-            'Designed Trainer and Trainee role-based backend with Node.js and Express.js',
+            'Designed a Trainer and Trainee role-based backend with Node.js and Express.js',
             'Implemented JWT authentication and bcrypt-secured password handling',
             'Developed real-time messaging and activity updates with Socket.IO and Redis',
             'Modeled mentorship workflows for subscriptions, task assignment, and progress tracking in MongoDB',
@@ -142,14 +142,14 @@ export const projects = [
     {
         id: 3,
         title: 'EventSphere - Event Management Platform',
-        shortDescription: 'Full-stack event platform for creation, registration, and event data management.',
-        fullDescription: 'Built a full-stack event management system with a Node.js and Express.js backend, a React.js frontend, and MongoDB persistence for event lifecycle operations and responsive user experience.',
+        shortDescription: 'Event platform for creation, registration, and event data management.',
+        fullDescription: 'Built a full-stack event management system with a Node.js and Express.js backend, a React.js frontend, and MongoDB persistence for event lifecycle operations.',
         tech: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Tailwind CSS'],
         features: [
             'Designed REST APIs for event creation, registration, and retrieval flows',
             'Used MongoDB for robust event data storage and management',
             'Developed responsive UI components with React.js and Tailwind CSS',
-            'Delivered end-to-end full-stack integration between frontend and backend modules',
+            'Delivered end-to-end integration between frontend and backend modules',
         ],
         liveUrl: 'https://github.com/mayank70007',
         githubUrl: 'https://github.com/mayank70007',
@@ -160,24 +160,32 @@ export const projects = [
 export const experiences = [
     {
         id: 1,
-        title: 'Full-Stack Developer',
+        title: 'Freelance Full-Stack Developer',
         company: 'Freelance',
         period: '2023 — Present',
-        description: 'Building web applications for startups and small businesses.',
+        description: 'Working on freelance and self-driven web projects with a focus on practical delivery and maintainable code.',
         details: [
-            'Developed custom web applications for 10+ clients',
-            'Implemented responsive designs optimized for performance',
-            'Integrated third-party APIs and payment systems',
+            'Built and maintained web applications across frontend and backend tasks',
+            'Translated requirements into responsive interfaces and API-driven features',
+            'Focused on clear communication, clean structure, and iterative delivery',
         ],
         technologies: ['React', 'Next.js', 'Node.js', 'MySQL'],
     },
 ]
 
 export const education = {
-    degree: 'Bachelor\'s Degree in Computer Science',
-    school: 'S A Jain Senior Model School',
-    period: '2023 — 2027',
-    description: 'Focused on software engineering, algorithms, and web technologies.',
+    items: [
+        {
+            degree: 'B.E. in Computer Science',
+            school: 'Chitkara University, CUIET | Rajpura, India',
+            period: '2023 — 2027'
+        },
+        {
+            degree: 'XII - Non-Medical',
+            school: 'S.A. Jain Senior Model School | Ambala, India',
+            period: '2021 — 2023'
+        }
+    ],
 }
 
 export const profiles = [

@@ -3,6 +3,13 @@
  * Update this file to personalize your portfolio
  */
 
+import {
+    SiHtml5, SiCss3, SiJavascript, SiReact, SiNextdotjs, SiSpring, SiSpringboot,
+    SiNodedotjs, SiExpress, SiTailwindcss, SiMongodb, SiMysql,
+    SiRedis, SiDocker, SiGit, SiFirebase, SiVercel,
+} from 'react-icons/si'
+import { FaJava, FaPython } from 'react-icons/fa'
+
 export const siteConfig = {
     name: 'Mayank Singal',
     title: 'Full-Stack Developer',
@@ -20,9 +27,9 @@ export const siteConfig = {
 // 2. Create an email template with variables: {{from_name}}, {{from_email}}, {{message}}
 // 3. Get your Public Key from Account > API Keys
 export const emailjsConfig = {
-    serviceId: import.meta.env.VITE_EMAILJS_SERVICE_ID || '',
-    templateId: import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '',
-    publicKey: import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '',
+    serviceId: (import.meta.env.VITE_EMAILJS_SERVICE_ID || '').trim(),
+    templateId: (import.meta.env.VITE_EMAILJS_TEMPLATE_ID || '').trim(),
+    publicKey: (import.meta.env.VITE_EMAILJS_PUBLIC_KEY || '').trim(),
 }
 
 export const socialLinks = {
@@ -63,7 +70,7 @@ export const aboutContent = {
         'I am comfortable working across frontend and backend tasks, and I prefer to keep things maintainable rather than overcomplicated.',
     ],
     stats: [
-        { value: '5+', label: 'Projects Built' },
+        { value: '6+', label: 'Projects Built' },
         { value: '8+', label: 'Core Technologies' },
         { value: '1', label: 'Years Experience' },
     ],
@@ -84,24 +91,24 @@ export const aboutContent = {
 }
 
 export const techStackItems = [
-    { name: 'Spring Boot', color: '#6DB33F' },
-    { name: 'Spring', color: '#6DB33F' },
-    { name: 'Java', color: '#ED8B00' },
-    { name: 'JavaScript', color: '#F7DF1E' },
-    { name: 'React', color: '#61DAFB' },
-    { name: 'Node.js', color: '#339933' },
-    { name: 'Express', color: '#ffffff' },
-    { name: 'HTML', color: '#E34F26' },
-    { name: 'CSS', color: '#1572B6' },
-    { name: 'Tailwind CSS', color: '#06B6D4' },
-    { name: 'MySQL', color: '#4479A1' },
-    { name: 'MongoDB', color: '#47A248' },
-    { name: 'Redis', color: '#DC382D' },
-    { name: 'Docker', color: '#2496ED' },
-    { name: 'Git', color: '#F05032' },
-    { name: 'Python', color: '#3776AB' },
-    { name: 'Firebase', color: '#FFCA28' },
-    { name: 'Vercel', color: '#ffffff' },
+    { name: 'Spring Boot', color: '#6DB33F', icon: SiSpringboot },
+    { name: 'Spring', color: '#6DB33F', icon: SiSpring },
+    { name: 'Java', color: '#ED8B00', icon: FaJava },
+    { name: 'JavaScript', color: '#F7DF1E', icon: SiJavascript },
+    { name: 'React', color: '#61DAFB', icon: SiReact },
+    { name: 'Node.js', color: '#339933', icon: SiNodedotjs },
+    { name: 'Express', color: '#ffffff', icon: SiExpress },
+    { name: 'HTML', color: '#E34F26', icon: SiHtml5 },
+    { name: 'CSS', color: '#1572B6', icon: SiCss3 },
+    { name: 'Tailwind CSS', color: '#06B6D4', icon: SiTailwindcss },
+    { name: 'MySQL', color: '#4479A1', icon: SiMysql },
+    { name: 'MongoDB', color: '#47A248', icon: SiMongodb },
+    { name: 'Redis', color: '#DC382D', icon: SiRedis },
+    { name: 'Docker', color: '#2496ED', icon: SiDocker },
+    { name: 'Git', color: '#F05032', icon: SiGit },
+    { name: 'Python', color: '#3776AB', icon: FaPython },
+    { name: 'Firebase', color: '#FFCA28', icon: SiFirebase },
+    { name: 'Vercel', color: '#ffffff', icon: SiVercel },
 ]
 
 export const projects = [
